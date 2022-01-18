@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mult_signed_18bit_synth_1" LaunchDir="D:/work/UIC_Course/DigitalCircuitsDesign/Project/karatsuba_mult/karatsuba_mult.runs/mult_signed_18bit_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

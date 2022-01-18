@@ -1,0 +1,915 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Sep  6 13:23:33 2020
+# Process ID: 29524
+# Current directory: C:/1desktop/karatsuba_mult_opt/karatsuba_mult.runs/synth_vivado-default
+# Command line: vivado.exe -log karatsuba_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source karatsuba_top.tcl
+# Log file: C:/1desktop/karatsuba_mult_opt/karatsuba_mult.runs/synth_vivado-default/karatsuba_top.vds
+# Journal file: C:/1desktop/karatsuba_mult_opt/karatsuba_mult.runs/synth_vivado-default\vivado.jou
+#-----------------------------------------------------------
+source karatsuba_top.tcl -notrace
+Command: synth_design -top karatsuba_top -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6104 
+WARNING: [Synth 8-2507] parameter declaration becomes local in kara_mult_34bit with formal parameter declaration list [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v:39]
+WARNING: [Synth 8-2507] parameter declaration becomes local in kara_mult_34bit with formal parameter declaration list [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v:41]
+WARNING: [Synth 8-2507] parameter declaration becomes local in kara_mult_66bit with formal parameter declaration list [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v:38]
+WARNING: [Synth 8-2507] parameter declaration becomes local in kara_mult_66bit with formal parameter declaration list [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v:40]
+WARNING: [Synth 8-2507] parameter declaration becomes local in karatsuba_top with formal parameter declaration list [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/karatsuba_top_for_imp.v:39]
+WARNING: [Synth 8-2507] parameter declaration becomes local in karatsuba_top with formal parameter declaration list [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/karatsuba_top_for_imp.v:41]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 417.180 ; gain = 107.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_top' [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/karatsuba_top_for_imp.v:24]
+	Parameter BIT_WIDTH bound to: 128 - type: integer 
+	Parameter PART_WIDTH bound to: 64 - type: integer 
+	Parameter NEXT_MULT_WIDTH bound to: 66 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'kara_mult_66bit' [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v:23]
+	Parameter BIT_WIDTH bound to: 66 - type: integer 
+	Parameter PART_WIDTH bound to: 33 - type: integer 
+	Parameter NEXT_MULT_WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'kara_mult_34bit' [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v:24]
+	Parameter BIT_WIDTH bound to: 34 - type: integer 
+	Parameter PART_WIDTH bound to: 17 - type: integer 
+	Parameter NEXT_MULT_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mult_signed_18bit' [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.runs/synth_vivado-default/.Xil/Vivado-29524-MMK-PC-X360/realtime/mult_signed_18bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_signed_18bit' (1#1) [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.runs/synth_vivado-default/.Xil/Vivado-29524-MMK-PC-X360/realtime/mult_signed_18bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kara_mult_34bit' (2#1) [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v:24]
+WARNING: [Synth 8-6014] Unused sequential element sum_1_tmp_2r_reg was removed.  [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v:250]
+INFO: [Synth 8-6155] done synthesizing module 'kara_mult_66bit' (3#1) [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_top' (4#1) [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/karatsuba_top_for_imp.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 453.223 ; gain = 144.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 453.223 ; gain = 144.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 453.223 ; gain = 144.035
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl'
+Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm'
+Finished Parsing XDC File [c:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit/mult_signed_18bit_in_context.xdc] for cell 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm'
+Parsing XDC File [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/constrs_1/new/timming.xdc]
+Finished Parsing XDC File [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/constrs_1/new/timming.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 843.855 ; gain = 0.086
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 847.777 ; gain = 0.086
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.327 . Memory (MB): peak = 848.074 ; gain = 4.219
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 849.453 ; gain = 540.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 849.453 ; gain = 540.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_ch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_ch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_ch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_cl. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_cl. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_cl. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/u_kara_mult_18bit_cm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/u_kara_mult_18bit_cm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/u_kara_mult_18bit_cm. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 849.453 ; gain = 540.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 849.453 ; gain = 540.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    132 Bit       Adders := 2     
+	   3 Input     70 Bit       Adders := 7     
+	   2 Input     65 Bit       Adders := 4     
+	   3 Input     39 Bit       Adders := 3     
+	   2 Input     38 Bit       Adders := 9     
+	   2 Input     37 Bit       Adders := 9     
+	   2 Input     34 Bit       Adders := 12    
+	   3 Input     23 Bit       Adders := 9     
+	   2 Input     18 Bit       Adders := 18    
+	   3 Input     18 Bit       Adders := 18    
++---Registers : 
+	              256 Bit    Registers := 1     
+	              132 Bit    Registers := 6     
+	              128 Bit    Registers := 7     
+	               70 Bit    Registers := 10    
+	               68 Bit    Registers := 9     
+	               66 Bit    Registers := 21    
+	               65 Bit    Registers := 4     
+	               64 Bit    Registers := 9     
+	               39 Bit    Registers := 3     
+	               38 Bit    Registers := 18    
+	               37 Bit    Registers := 9     
+	               36 Bit    Registers := 9     
+	               34 Bit    Registers := 66    
+	               33 Bit    Registers := 27    
+	               23 Bit    Registers := 9     
+	               18 Bit    Registers := 36    
+	               17 Bit    Registers := 81    
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module karatsuba_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    132 Bit       Adders := 2     
+	   3 Input     70 Bit       Adders := 1     
+	   2 Input     65 Bit       Adders := 4     
++---Registers : 
+	              256 Bit    Registers := 1     
+	              132 Bit    Registers := 3     
+	              128 Bit    Registers := 7     
+	               70 Bit    Registers := 1     
+	               65 Bit    Registers := 4     
+	               64 Bit    Registers := 9     
+	                1 Bit    Registers := 1     
+Module kara_mult_34bit__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     38 Bit       Adders := 1     
+	   2 Input     37 Bit       Adders := 1     
+	   3 Input     23 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
++---Registers : 
+	               68 Bit    Registers := 1     
+	               38 Bit    Registers := 2     
+	               37 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 6     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	               17 Bit    Registers := 9     
+Module kara_mult_34bit__xdcDup__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     38 Bit       Adders := 1     
+	   2 Input     37 Bit       Adders := 1     
+	   3 Input     23 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
++---Registers : 
+	               68 Bit    Registers := 1     
+	               38 Bit    Registers := 2     
+	               37 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 6     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	               17 Bit    Registers := 9     
+Module kara_mult_34bit__xdcDup__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     38 Bit       Adders := 1     
+	   2 Input     37 Bit       Adders := 1     
+	   3 Input     23 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
++---Registers : 
+	               68 Bit    Registers := 1     
+	               38 Bit    Registers := 2     
+	               37 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 6     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	               17 Bit    Registers := 9     
+Module kara_mult_66bit__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     70 Bit       Adders := 2     
+	   3 Input     39 Bit       Adders := 1     
+	   2 Input     34 Bit       Adders := 4     
++---Registers : 
+	              132 Bit    Registers := 1     
+	               70 Bit    Registers := 3     
+	               66 Bit    Registers := 7     
+	               39 Bit    Registers := 1     
+	               34 Bit    Registers := 4     
+	               33 Bit    Registers := 9     
+Module kara_mult_34bit__xdcDup__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     38 Bit       Adders := 1     
+	   2 Input     37 Bit       Adders := 1     
+	   3 Input     23 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
++---Registers : 
+	               68 Bit    Registers := 1     
+	               38 Bit    Registers := 2     
+	               37 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 6     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	               17 Bit    Registers := 9     
+Module kara_mult_34bit__xdcDup__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     38 Bit       Adders := 1     
+	   2 Input     37 Bit       Adders := 1     
+	   3 Input     23 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
++---Registers : 
+	               68 Bit    Registers := 1     
+	               38 Bit    Registers := 2     
+	               37 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 6     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	               17 Bit    Registers := 9     
+Module kara_mult_34bit__xdcDup__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     38 Bit       Adders := 1     
+	   2 Input     37 Bit       Adders := 1     
+	   3 Input     23 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
++---Registers : 
+	               68 Bit    Registers := 1     
+	               38 Bit    Registers := 2     
+	               37 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 6     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	               17 Bit    Registers := 9     
+Module kara_mult_66bit__xdcDup__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     70 Bit       Adders := 2     
+	   3 Input     39 Bit       Adders := 1     
+	   2 Input     34 Bit       Adders := 4     
++---Registers : 
+	              132 Bit    Registers := 1     
+	               70 Bit    Registers := 3     
+	               66 Bit    Registers := 7     
+	               39 Bit    Registers := 1     
+	               34 Bit    Registers := 4     
+	               33 Bit    Registers := 9     
+Module kara_mult_34bit__xdcDup__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     38 Bit       Adders := 1     
+	   2 Input     37 Bit       Adders := 1     
+	   3 Input     23 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
++---Registers : 
+	               68 Bit    Registers := 1     
+	               38 Bit    Registers := 2     
+	               37 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 6     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	               17 Bit    Registers := 9     
+Module kara_mult_34bit__xdcDup__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     38 Bit       Adders := 1     
+	   2 Input     37 Bit       Adders := 1     
+	   3 Input     23 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
++---Registers : 
+	               68 Bit    Registers := 1     
+	               38 Bit    Registers := 2     
+	               37 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 6     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	               17 Bit    Registers := 9     
+Module kara_mult_34bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     38 Bit       Adders := 1     
+	   2 Input     37 Bit       Adders := 1     
+	   3 Input     23 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
++---Registers : 
+	               68 Bit    Registers := 1     
+	               38 Bit    Registers := 2     
+	               37 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 6     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	               17 Bit    Registers := 9     
+Module kara_mult_66bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     70 Bit       Adders := 2     
+	   3 Input     39 Bit       Adders := 1     
+	   2 Input     34 Bit       Adders := 4     
++---Registers : 
+	              132 Bit    Registers := 1     
+	               70 Bit    Registers := 3     
+	               66 Bit    Registers := 7     
+	               39 Bit    Registers := 1     
+	               34 Bit    Registers := 4     
+	               33 Bit    Registers := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'u_kara_mult_34bit_cl/mult_out_reg' and it is trimmed from '68' to '66' bits. [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v:254]
+WARNING: [Synth 8-3936] Found unconnected internal register 'u_kara_mult_34bit_cl/mult_out_reg' and it is trimmed from '68' to '66' bits. [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v:254]
+WARNING: [Synth 8-3936] Found unconnected internal register 'u_kara_mult_34bit_cl/mult_out_reg' and it is trimmed from '68' to '66' bits. [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v:254]
+INFO: [Synth 8-4471] merging register 'kara_in_bh_1r_reg[63:0]' into 'kara_in_ah_1r_reg[63:0]' [C:/1desktop/karatsuba_mult_opt/karatsuba_mult.srcs/sources_1/new/karatsuba_top_for_imp.v:71]
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[0]' (FDR) to 'sum_bh_bl_reg[8]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[1]' (FDR) to 'sum_bh_bl_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[2]' (FDR) to 'sum_bh_bl_reg[10]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[3]' (FDR) to 'sum_bh_bl_reg[11]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[4]' (FDR) to 'sum_bh_bl_reg[12]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[5]' (FDR) to 'sum_bh_bl_reg[13]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[6]' (FDR) to 'sum_bh_bl_reg[14]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[7]' (FDR) to 'sum_bh_bl_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[8]' (FDR) to 'sum_bh_bl_reg[16]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[9]' (FDR) to 'sum_bh_bl_reg[17]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[10]' (FDR) to 'sum_bh_bl_reg[18]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[11]' (FDR) to 'sum_bh_bl_reg[19]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[12]' (FDR) to 'sum_bh_bl_reg[20]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[13]' (FDR) to 'sum_bh_bl_reg[21]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[14]' (FDR) to 'sum_bh_bl_reg[22]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[15]' (FDR) to 'sum_bh_bl_reg[23]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[16]' (FDR) to 'sum_bh_bl_reg[24]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[17]' (FDR) to 'sum_bh_bl_reg[25]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[18]' (FDR) to 'sum_bh_bl_reg[26]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[19]' (FDR) to 'sum_bh_bl_reg[27]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[20]' (FDR) to 'sum_bh_bl_reg[28]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[21]' (FDR) to 'sum_bh_bl_reg[29]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[22]' (FDR) to 'sum_bh_bl_reg[30]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[23]' (FDR) to 'sum_bh_bl_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[24]' (FDR) to 'sum_bh_bl_reg[32]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[25]' (FDR) to 'sum_bh_bl_reg[33]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[26]' (FDR) to 'sum_bh_bl_reg[34]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[27]' (FDR) to 'sum_bh_bl_reg[35]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[28]' (FDR) to 'sum_bh_bl_reg[36]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[29]' (FDR) to 'sum_bh_bl_reg[37]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[30]' (FDR) to 'sum_bh_bl_reg[38]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[31]' (FDR) to 'sum_bh_bl_reg[39]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[32]' (FDR) to 'sum_bh_bl_reg[40]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[0]' (FDR) to 'sum_ah_al_reg[8]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[1]' (FDR) to 'sum_ah_al_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[2]' (FDR) to 'sum_ah_al_reg[10]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[3]' (FDR) to 'sum_ah_al_reg[11]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[4]' (FDR) to 'sum_ah_al_reg[12]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[5]' (FDR) to 'sum_ah_al_reg[13]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[6]' (FDR) to 'sum_ah_al_reg[14]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[7]' (FDR) to 'sum_ah_al_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[8]' (FDR) to 'sum_ah_al_reg[16]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[9]' (FDR) to 'sum_ah_al_reg[17]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[10]' (FDR) to 'sum_ah_al_reg[18]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[11]' (FDR) to 'sum_ah_al_reg[19]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[12]' (FDR) to 'sum_ah_al_reg[20]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[13]' (FDR) to 'sum_ah_al_reg[21]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[14]' (FDR) to 'sum_ah_al_reg[22]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[15]' (FDR) to 'sum_ah_al_reg[23]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[16]' (FDR) to 'sum_ah_al_reg[24]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[17]' (FDR) to 'sum_ah_al_reg[25]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[18]' (FDR) to 'sum_ah_al_reg[26]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[19]' (FDR) to 'sum_ah_al_reg[27]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[20]' (FDR) to 'sum_ah_al_reg[28]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[21]' (FDR) to 'sum_ah_al_reg[29]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[22]' (FDR) to 'sum_ah_al_reg[30]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[23]' (FDR) to 'sum_ah_al_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[24]' (FDR) to 'sum_ah_al_reg[32]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[25]' (FDR) to 'sum_ah_al_reg[33]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[26]' (FDR) to 'sum_ah_al_reg[34]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[27]' (FDR) to 'sum_ah_al_reg[35]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[28]' (FDR) to 'sum_ah_al_reg[36]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[29]' (FDR) to 'sum_ah_al_reg[37]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[30]' (FDR) to 'sum_ah_al_reg[38]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[31]' (FDR) to 'sum_ah_al_reg[39]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[32]' (FDR) to 'sum_ah_al_reg[40]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[33]' (FDR) to 'sum_bh_bl_reg[41]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[33]' (FDR) to 'sum_ah_al_reg[41]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[34]' (FDR) to 'sum_bh_bl_reg[42]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[35]' (FDR) to 'sum_bh_bl_reg[43]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[36]' (FDR) to 'sum_bh_bl_reg[44]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[37]' (FDR) to 'sum_bh_bl_reg[45]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[38]' (FDR) to 'sum_bh_bl_reg[46]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[39]' (FDR) to 'sum_bh_bl_reg[47]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[40]' (FDR) to 'sum_bh_bl_reg[48]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[41]' (FDR) to 'sum_bh_bl_reg[49]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[42]' (FDR) to 'sum_bh_bl_reg[50]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[43]' (FDR) to 'sum_bh_bl_reg[51]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[44]' (FDR) to 'sum_bh_bl_reg[52]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[45]' (FDR) to 'sum_bh_bl_reg[53]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[46]' (FDR) to 'sum_bh_bl_reg[54]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[47]' (FDR) to 'sum_bh_bl_reg[55]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[48]' (FDR) to 'sum_bh_bl_reg[56]'
+INFO: [Synth 8-3886] merging instance 'sum_bh_bl_reg[49]' (FDR) to 'sum_bh_bl_reg[57]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[34]' (FDR) to 'sum_ah_al_reg[42]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[35]' (FDR) to 'sum_ah_al_reg[43]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[36]' (FDR) to 'sum_ah_al_reg[44]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[37]' (FDR) to 'sum_ah_al_reg[45]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[38]' (FDR) to 'sum_ah_al_reg[46]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[39]' (FDR) to 'sum_ah_al_reg[47]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[40]' (FDR) to 'sum_ah_al_reg[48]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[41]' (FDR) to 'sum_ah_al_reg[49]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[42]' (FDR) to 'sum_ah_al_reg[50]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[43]' (FDR) to 'sum_ah_al_reg[51]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[44]' (FDR) to 'sum_ah_al_reg[52]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[45]' (FDR) to 'sum_ah_al_reg[53]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[46]' (FDR) to 'sum_ah_al_reg[54]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[47]' (FDR) to 'sum_ah_al_reg[55]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[48]' (FDR) to 'sum_ah_al_reg[56]'
+INFO: [Synth 8-3886] merging instance 'sum_ah_al_reg[49]' (FDR) to 'sum_ah_al_reg[57]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sum_bh_bl_reg[64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sum_ah_al_reg[64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kara_in_ah_1r_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cm/kara_in_bh_1r_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cm/kara_in_ah_1r_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/kara_in_bh_1r_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/kara_in_bh_1r_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/kara_in_ah_1r_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/kara_in_ah_1r_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/kara_in_bh_1r_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/kara_in_bh_1r_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/kara_in_ah_1r_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/kara_in_ah_1r_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/kara_in_bh_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/kara_in_ah_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/kara_in_bh_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/kara_in_ah_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/kara_in_bh_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/kara_in_ah_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/kara_in_bh_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/kara_in_ah_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/kara_in_bh_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/kara_in_ah_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/kara_in_bh_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/kara_in_ah_1r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/sum_cmh_chl_carry_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/sum_cmh_chl_carry_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/sum_cmh_chl_carry_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/sum_cmh_chl_carry_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/sum_cmh_chl_carry_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/sum_cmh_chl_carry_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/sum_cmh_chl_carry_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/sum_cmh_chl_carry_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/sum_cmh_chl_carry_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cm/sum_cmh_chl_carry_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_cl/sum_cmh_chl_carry_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_kara_mult_66bit_ch/sum_cmh_chl_carry_reg[38] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 849.453 ; gain = 540.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 849.453 ; gain = 540.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 864.332 ; gain = 555.145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 886.961 ; gain = 577.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 886.961 ; gain = 577.773
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 886.961 ; gain = 577.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 886.961 ; gain = 577.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 886.961 ; gain = 577.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:29 ; elapsed = 00:01:31 . Memory (MB): peak = 886.961 ; gain = 577.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:29 ; elapsed = 00:01:31 . Memory (MB): peak = 886.961 ; gain = 577.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|karatsuba_top | u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/sum_0_tmp_1r_reg[16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_ch/u_kara_mult_34bit_cl/mult_ch_out_4r_reg[31] | 4      | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_ch/sum_0_tmp_1r_reg[32]                        | 4      | 33    | YES          | NO                 | YES               | 33     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/sum_0_tmp_1r_reg[16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_ch/u_kara_mult_34bit_ch/mult_ch_out_4r_reg[33] | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/sum_0_tmp_1r_reg[16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_ch/u_kara_mult_34bit_cm/mult_ch_out_4r_reg[33] | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_ch/mult_ch_out_4r_reg[61]                      | 4      | 29    | YES          | NO                 | YES               | 29     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/sum_0_tmp_1r_reg[16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cl/u_kara_mult_34bit_cl/mult_ch_out_4r_reg[31] | 4      | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cl/sum_0_tmp_1r_reg[32]                        | 4      | 33    | YES          | NO                 | YES               | 33     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/sum_0_tmp_1r_reg[16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cl/u_kara_mult_34bit_ch/mult_ch_out_4r_reg[33] | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/sum_0_tmp_1r_reg[16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cl/u_kara_mult_34bit_cm/mult_ch_out_4r_reg[33] | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cl/mult_ch_out_4r_reg[65]                      | 4      | 33    | YES          | NO                 | YES               | 33     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/sum_0_tmp_1r_reg[16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cm/u_kara_mult_34bit_cl/mult_ch_out_4r_reg[31] | 4      | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cm/sum_0_tmp_1r_reg[32]                        | 4      | 33    | YES          | NO                 | YES               | 33     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/sum_0_tmp_1r_reg[16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cm/u_kara_mult_34bit_ch/mult_ch_out_4r_reg[33] | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/sum_0_tmp_1r_reg[16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cm/u_kara_mult_34bit_cm/mult_ch_out_4r_reg[33] | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|karatsuba_top | u_kara_mult_66bit_cm/mult_ch_out_4r_reg[65]                      | 4      | 33    | YES          | NO                 | YES               | 33     | 0       | 
+|karatsuba_top | sum_0_tmp_1r_reg[63]                                             | 5      | 64    | YES          | NO                 | YES               | 64     | 0       | 
++--------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |mult_signed_18bit |        27|
++------+------------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |mult_signed_18bit     |     1|
+|2     |mult_signed_18bit__27 |     1|
+|3     |mult_signed_18bit__28 |     1|
+|4     |mult_signed_18bit__29 |     1|
+|5     |mult_signed_18bit__30 |     1|
+|6     |mult_signed_18bit__31 |     1|
+|7     |mult_signed_18bit__32 |     1|
+|8     |mult_signed_18bit__33 |     1|
+|9     |mult_signed_18bit__34 |     1|
+|10    |mult_signed_18bit__35 |     1|
+|11    |mult_signed_18bit__36 |     1|
+|12    |mult_signed_18bit__37 |     1|
+|13    |mult_signed_18bit__38 |     1|
+|14    |mult_signed_18bit__39 |     1|
+|15    |mult_signed_18bit__40 |     1|
+|16    |mult_signed_18bit__41 |     1|
+|17    |mult_signed_18bit__42 |     1|
+|18    |mult_signed_18bit__43 |     1|
+|19    |mult_signed_18bit__44 |     1|
+|20    |mult_signed_18bit__45 |     1|
+|21    |mult_signed_18bit__46 |     1|
+|22    |mult_signed_18bit__47 |     1|
+|23    |mult_signed_18bit__48 |     1|
+|24    |mult_signed_18bit__49 |     1|
+|25    |mult_signed_18bit__50 |     1|
+|26    |mult_signed_18bit__51 |     1|
+|27    |mult_signed_18bit__52 |     1|
+|28    |BUFG                  |     1|
+|29    |CARRY4                |   725|
+|30    |LUT1                  |    50|
+|31    |LUT2                  |  2892|
+|32    |LUT6                  |    51|
+|33    |SRL16E                |   558|
+|34    |FDRE                  |  8709|
+|35    |IBUF                  |    18|
+|36    |OBUF                  |     1|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+-------------------------+---------------------------+------+
+|      |Instance                 |Module                     |Cells |
++------+-------------------------+---------------------------+------+
+|1     |top                      |                           | 13977|
+|2     |  u_kara_mult_66bit_ch   |kara_mult_66bit__xdcDup__1 |  3519|
+|3     |    u_kara_mult_34bit_ch |kara_mult_34bit__xdcDup__1 |   770|
+|4     |    u_kara_mult_34bit_cl |kara_mult_34bit__xdcDup__2 |   757|
+|5     |    u_kara_mult_34bit_cm |kara_mult_34bit__xdcDup__3 |   838|
+|6     |  u_kara_mult_66bit_cl   |kara_mult_66bit__xdcDup__2 |  4104|
+|7     |    u_kara_mult_34bit_ch |kara_mult_34bit__xdcDup__4 |   896|
+|8     |    u_kara_mult_34bit_cl |kara_mult_34bit__xdcDup__5 |   871|
+|9     |    u_kara_mult_34bit_cm |kara_mult_34bit__xdcDup__6 |   986|
+|10    |  u_kara_mult_66bit_cm   |kara_mult_66bit            |  4099|
+|11    |    u_kara_mult_34bit_ch |kara_mult_34bit__xdcDup__7 |   816|
+|12    |    u_kara_mult_34bit_cl |kara_mult_34bit__xdcDup__8 |   803|
+|13    |    u_kara_mult_34bit_cm |kara_mult_34bit            |   986|
++------+-------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:29 ; elapsed = 00:01:31 . Memory (MB): peak = 886.961 ; gain = 577.773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:13 . Memory (MB): peak = 886.961 ; gain = 181.543
+Synthesis Optimization Complete : Time (s): cpu = 00:01:29 ; elapsed = 00:01:31 . Memory (MB): peak = 886.961 ; gain = 577.773
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 725 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 886.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+222 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:40 . Memory (MB): peak = 886.961 ; gain = 587.637
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 886.961 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/1desktop/karatsuba_mult_opt/karatsuba_mult.runs/synth_vivado-default/karatsuba_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file karatsuba_top_utilization_synth.rpt -pb karatsuba_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  6 13:25:29 2020...

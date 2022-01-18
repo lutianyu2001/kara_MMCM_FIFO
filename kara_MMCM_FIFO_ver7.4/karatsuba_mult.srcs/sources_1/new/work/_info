@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dI:/文件备份整理20210227/[( My Files )] - ENVY/FPGA Sources/Karatsuba Project Source/kara_MMCM_FIFO_ver7.4/karatsuba_mult.srcs/sources_1/new
+vfifo_256x64_control
+!s110 1642412546
+!i10b 1
+!s100 Xhd63FhJcz@zbY_>oQ3fb0
+IgY@H__10;aBZTSTHc=XTV1
+VDg1SIo80bB@j0V0VzS_@n1
+dI:/FPGA Sources/Karatsuba Project Source/kara_MMCM_FIFO_ver7.4/karatsuba_mult.srcs/sources_1/new
+w1642412545
+8c:\users\suroot\appdata\local\temp\tmp2b99i7.v
+Fc:\users\suroot\appdata\local\temp\tmp2b99i7.v
+Fall_parameters.vh
+L0 28
+OL;L;10.6d;65
+r1
+!s85 0
+31
+!s108 1642412545.000000
+!s107 all_parameters.vh|c:\users\suroot\appdata\local\temp\tmp2b99i7.v|
+!s90 c:\users\suroot\appdata\local\temp\tmp2b99i7.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

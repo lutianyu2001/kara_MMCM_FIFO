@@ -1,0 +1,1329 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/program/Vivado/Project/karatsuba_mult/karatsuba_mult/karatsuba_mult.sim/sim_1/behav/modelsim
+vfifo_256x64_control
+Z0 !s110 1601034798
+!i10b 1
+!s100 Xhd63FhJcz@zbY_>oQ3fb0
+ImdXX?o3VHn1cL_1E`GDm_0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/1desktop/kara_MMCM_FIFO_ver7.4/karatsuba_mult.sim/sim_1/behav/modelsim
+w1601034786
+8../../../../karatsuba_mult.srcs/sources_1/new/fifo_256x64_control.v
+F../../../../karatsuba_mult.srcs/sources_1/new/fifo_256x64_control.v
+Z3 F../../../../karatsuba_mult.srcs/sources_1/new/all_parameters.vh
+Z4 L0 28
+Z5 OL;L;10.6d;65
+r1
+!s85 0
+31
+!s108 1601034797.000000
+Z6 !s107 ../../../../karatsuba_mult.srcs/sources_1/new/all_parameters.vh|../../../../karatsuba_mult.srcs/sim_1/new/tb_clk.v|../../../../karatsuba_mult.srcs/sources_1/new/singROM_256x128_control.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sources_1/new/fifo_256x64_control.v|../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/ip/ip_fifo_256x64/ip_fifo_256x64_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/ip/ip_singROM_256x128/sim/ip_singROM_256x128.v|
+Z7 !s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../karatsuba_mult.srcs/sources_1/new|+incdir+../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2|../../../../karatsuba_mult.srcs/sources_1/ip/ip_singROM_256x128/sim/ip_singROM_256x128.v|../../../../karatsuba_mult.srcs/sources_1/ip/ip_fifo_256x64/ip_fifo_256x64_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/new/fifo_256x64_control.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sources_1/new/singROM_256x128_control.v|../../../../karatsuba_mult.srcs/sim_1/new/tb_clk.v|
+!i113 1
+Z8 o-work xil_defaultlib
+Z9 !s92 -work xil_defaultlib +incdir+../../../../karatsuba_mult.srcs/sources_1/new +incdir+../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2
+Z10 tCvgOpt 0
+vglbl
+R0
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IHANT?><<>G9J5i]G9zVT[0
+R1
+R2
+w1544155481
+8glbl.v
+Fglbl.v
+L0 6
+R5
+r1
+!s85 0
+31
+!s108 1601034798.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 1
+R8
+R10
+vip_clk_pll_x2
+Z11 !s10a 1600911652
+Z12 !s110 1601018015
+!i10b 1
+!s100 3[;]S^RM?h^fQWMEO4DbV0
+I[_zd5=c[Q:fHc;QQ^maWe2
+R1
+R2
+Z13 w1600911652
+Z14 8../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v
+Z15 F../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v
+L0 16
+R5
+r1
+!s85 0
+31
+Z16 !s108 1601018015.000000
+Z17 !s107 ../../../../karatsuba_mult.srcs/sources_1/new/all_parameters.vh|../../../../karatsuba_mult.srcs/sim_1/new/tb_master.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v|
+Z18 !s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../karatsuba_mult.srcs/sources_1/new|+incdir+../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2|../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sim_1/new/tb_master.v|
+!i113 1
+R8
+R9
+R10
+vip_clk_pll_x2_ip_clk_pll_x2_clk_wiz
+R11
+R12
+!i10b 1
+!s100 YlL>K^jTQUPT5_N;iC:dC0
+I>EgcS=Bj7I[:J]XVD9=oV1
+R1
+R2
+R13
+R14
+R15
+L0 43
+R5
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64
+Z19 !s10a 1601020407
+Z20 !s110 1601020416
+!i10b 1
+!s100 8JZUi=11R97dVmG8zb9m:3
+I@kEDzK0<5GBSK:[IzJkH:2
+R1
+R2
+Z21 w1601020407
+Z22 8../../../../karatsuba_mult.srcs/sources_1/ip/ip_fifo_256x64/ip_fifo_256x64_sim_netlist.v
+Z23 F../../../../karatsuba_mult.srcs/sources_1/ip/ip_fifo_256x64/ip_fifo_256x64_sim_netlist.v
+Z24 L0 17
+R5
+r1
+!s85 0
+31
+Z25 !s108 1601020415.000000
+Z26 !s107 ../../../../karatsuba_mult.srcs/sources_1/new/all_parameters.vh|../../../../karatsuba_mult.srcs/sim_1/new/tb_clk.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sources_1/new/fifo_256x64_control.v|../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/ip/ip_fifo_256x64/ip_fifo_256x64_sim_netlist.v|
+Z27 !s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../karatsuba_mult.srcs/sources_1/new|+incdir+../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2|../../../../karatsuba_mult.srcs/sources_1/ip/ip_fifo_256x64/ip_fifo_256x64_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/new/fifo_256x64_control.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sim_1/new/tb_clk.v|
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_generic_cstr
+R19
+R20
+!i10b 1
+!s100 T1N3gILA^AlVN9n5]`2oO1
+I`1lb]<c5HcQ8<<1DC:4;d2
+R1
+R2
+R21
+R22
+R23
+L0 1361
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_prim_width
+R19
+R20
+!i10b 1
+!s100 4WVTW8H@]]a;ifn0JIXcL1
+I7fFZdT[b4bW9jIb8o0e;M3
+R1
+R2
+R21
+R22
+R23
+L0 1439
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_prim_width__parameterized0
+R19
+R20
+!i10b 1
+!s100 I@bQdZj;Dm[kDh?chIYIa0
+ISY=:foHll>;V5R[i08R0b2
+R1
+R2
+R21
+R22
+R23
+L0 1486
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_prim_width__parameterized1
+R19
+R20
+!i10b 1
+!s100 ^bhCI5Ygk_9<^BE2;4hTA0
+Il<mQ?9HTJzW0Lhb=>jg@c2
+R1
+R2
+R21
+R22
+R23
+L0 1533
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_prim_width__parameterized2
+R19
+R20
+!i10b 1
+!s100 nh:FK]6FLEVZ3gdj4hTKf2
+Iec9j5SfKmQNNoAf;k325W3
+R1
+R2
+R21
+R22
+R23
+L0 1576
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_prim_wrapper
+R19
+R20
+!i10b 1
+!s100 j8Wg731bIeSIo@aGJb:C11
+ILIDIK?4S[NMgW?YRlCG:81
+R1
+R2
+R21
+R22
+R23
+L0 1622
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_prim_wrapper__parameterized0
+R19
+R20
+!i10b 1
+!s100 XEOaLYd<8`W0L6ILENi^N2
+InnOlE3GVH:QV@TNJfi4`X1
+R1
+R2
+R21
+R22
+R23
+L0 1874
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_prim_wrapper__parameterized1
+R19
+R20
+!i10b 1
+!s100 38PkWg7=iOk1h9mOC=CAM1
+IZYleD?[;NL[LGzfQ7eR3Q3
+R1
+R2
+R21
+R22
+R23
+L0 2126
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_prim_wrapper__parameterized2
+R19
+R20
+!i10b 1
+!s100 j5;JUb8mc:ZP?JoR7`2Qe1
+IQSTjQTGHo6haH=b03[goG1
+R1
+R2
+R21
+R22
+R23
+L0 2375
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_top
+R19
+R20
+!i10b 1
+!s100 c]Di=R`g[dIf>P0b7l?=f1
+IeMJXVf^9ozEhB@izXAbfF2
+R1
+R2
+R21
+R22
+R23
+L0 2658
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_v8_4_2
+R19
+R20
+!i10b 1
+!s100 WP<gOLXaHCJe0AiB1;YHO1
+I[jeR6<61zREPIGdN2ETaK1
+R1
+R2
+R21
+R22
+R23
+L0 2704
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_blk_mem_gen_v8_4_2_synth
+R19
+R20
+!i10b 1
+!s100 J75FDJ[@5Az^6lYN6<Q5h0
+IgoID>G`z]1ba_HdK80kAK0
+R1
+R2
+R21
+R22
+R23
+L0 2750
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_clk_x_pntrs
+R19
+R20
+!i10b 1
+!s100 TN3i_M@h>P8F>G84Zm3mA2
+IA7A;^MXHlYQzT9hW^K7Yn1
+R1
+R2
+R21
+R22
+R23
+L0 2796
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_fifo_generator_ramfifo
+R19
+R20
+!i10b 1
+!s100 NX^MEh_<6JN?1R205nEo62
+I6AEW?ki]RZ[BSif]z7Y0e1
+R1
+R2
+R21
+R22
+R23
+L0 2969
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_fifo_generator_top
+R19
+R20
+!i10b 1
+!s100 nZ1F^I>3O3i[NahMY^XA`1
+IRYgUPXTj`Bo]HB_VnX]8_2
+R1
+R2
+R21
+R22
+R23
+L0 3104
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_fifo_generator_v13_2_3
+R19
+R20
+!i10b 1
+!s100 8>`2e7Xnn47_SjOUkgLZn1
+I658[nCV_F5>g`f2dE;FWO1
+R1
+R2
+R21
+R22
+R23
+L0 3230
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_fifo_generator_v13_2_3_synth
+R19
+R20
+!i10b 1
+!s100 XSGZlEU?9iGaNnzW2Q0Kg0
+I210]L0ZhUKB>c5=jb@k:^2
+R1
+R2
+R21
+R22
+R23
+L0 4239
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_memory
+R19
+R20
+!i10b 1
+!s100 D6AYAJV^@KKYE^K<1BB_E0
+IOhNz^^oGHD?dTNR3?YMFk3
+R1
+R2
+R21
+R22
+R23
+L0 4297
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_rd_bin_cntr
+R19
+R20
+!i10b 1
+!s100 ^ARVDbbD__48QEb8PZO9d2
+I`bE_IQ]UbLPJ6]3g=O];U0
+R1
+R2
+R21
+R22
+R23
+L0 4343
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_rd_logic
+R19
+R20
+!i10b 1
+!s100 di0QWENZ4_Sf4`WzIVA<c2
+I0^;DQXENCGz2Yo_lXW>973
+R1
+R2
+R21
+R22
+R23
+L0 4552
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_rd_pe_as
+R19
+R20
+!i10b 1
+!s100 >CWYzJL^C;M5D?aoT?[VM3
+IJNcN>Ii2e>G;XTJ8E]]4f3
+R1
+R2
+R21
+R22
+R23
+L0 4632
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_rd_status_flags_as
+R19
+R20
+!i10b 1
+!s100 F8Ij<CmNe0hCn`Hm;jTzZ0
+Ib8e?]Y5P[[PNi6TYPkI`^2
+R1
+R2
+R21
+R22
+R23
+L0 4764
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_reset_blk_ramfifo
+R19
+R20
+!i10b 1
+!s100 [SP>zB:kzRVS1OTmPm@L70
+I`;bXXZ`]C6@S^cmSfaS@T2
+R1
+R2
+R21
+R22
+R23
+L0 4829
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_wr_bin_cntr
+R19
+R20
+!i10b 1
+!s100 L]`LZR2JEnR9aV6Gn_fRm2
+IPgSbFgC3W45OW>]e>Xi^g0
+R1
+R2
+R21
+R22
+R23
+L0 5019
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_wr_logic
+R19
+R20
+!i10b 1
+!s100 56^cA[_z>HO4hNCRc`;oL1
+Ik[8S^>OfNQhQ:_Rn5AgSh2
+R1
+R2
+R21
+R22
+R23
+L0 5331
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_wr_pf_as
+R19
+R20
+!i10b 1
+!s100 UHY>Egbkn@OSDEEcab=5l2
+IAKaZ[A@^<_@LDH=7aJGT;2
+R1
+R2
+R21
+R22
+R23
+L0 5421
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_wr_status_flags_as
+R19
+R20
+!i10b 1
+!s100 Jg7EjA0z_RHZfCKYD9CnJ0
+Ij7IH@MDWE:Oc1SkXSf6^@0
+R1
+R2
+R21
+R22
+R23
+L0 5528
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_xpm_cdc_async_rst
+R19
+R20
+!i10b 1
+!s100 nl_82g>Y=d5f>[Z3zYES51
+I1kmNnFoG=aKO6V:^RIk<51
+R1
+R2
+R21
+R22
+R23
+L0 613
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_xpm_cdc_async_rst__2
+R19
+R20
+!i10b 1
+!s100 ?MCF[CEFbT_]=2oH9oKZT3
+Io0PCnnCS_B_;aKJ6ILC=i2
+R1
+R2
+R21
+R22
+R23
+L0 653
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_xpm_cdc_gray
+R19
+R20
+!i10b 1
+!s100 diiF1;H7DKoli5gAg?_i;0
+ICBONm35ZA8CEPOhnCI3=_1
+R1
+R2
+R21
+R22
+R23
+L0 693
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_xpm_cdc_gray__2
+R19
+R20
+!i10b 1
+!s100 3[N[H[JS3<=]=<O5MnmUN3
+IlI@Q6S<;EK?jO722<;=NQ0
+R1
+R2
+R21
+R22
+R23
+L0 973
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_xpm_cdc_single
+R19
+R20
+!i10b 1
+!s100 KcNZGhkK4l4Ddh:T;CP;32
+IBHCzE]Jo]?T4I@DS424l81
+R1
+R2
+R21
+R22
+R23
+L0 1252
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_fifo_256x64_xpm_cdc_single__2
+R19
+R20
+!i10b 1
+!s100 D35?<=zV3OZZc7IR7WCTa3
+I^AKC>DklUA_3hA;e=mTBh3
+R1
+R2
+R21
+R22
+R23
+L0 1308
+R5
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R8
+R9
+R10
+vip_singROM_256x128
+!s10a 1600996438
+!s110 1600957119
+!i10b 1
+!s100 Rhnm3BACl[<c=SWbjPgmL1
+I=zzinABoZ9`>bkB38`YNB1
+R1
+R2
+w1600936459
+8../../../../karatsuba_mult.srcs/sources_1/ip/ip_singROM_256x128/sim/ip_singROM_256x128.v
+F../../../../karatsuba_mult.srcs/sources_1/ip/ip_singROM_256x128/sim/ip_singROM_256x128.v
+Z28 L0 56
+R5
+r1
+!s85 0
+31
+!s108 1600957119.000000
+Z29 !s107 ../../../../karatsuba_mult.srcs/sim_1/new/tb_singROM_256x128_control.v|../../../../karatsuba_mult.srcs/sources_1/new/singROM_256x128_control.v|../../../../karatsuba_mult.srcs/sources_1/ip/ip_singROM_256x128/sim/ip_singROM_256x128.v|
+Z30 !s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../karatsuba_mult.srcs/sources_1/new|+incdir+../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2|../../../../karatsuba_mult.srcs/sources_1/ip/ip_singROM_256x128/sim/ip_singROM_256x128.v|../../../../karatsuba_mult.srcs/sources_1/new/singROM_256x128_control.v|../../../../karatsuba_mult.srcs/sim_1/new/tb_singROM_256x128_control.v|
+!i113 1
+R8
+R9
+R10
+nip_sing@r@o@m_256x128
+vkara_mult_34bit
+!s10a 1599308660
+Z31 !s110 1600401088
+!i10b 1
+!s100 R@f_[Tj<NOP4F@:hQ:HO73
+IAi873CfCj;G09^?Eg3NIa0
+R1
+Z32 dC:/1desktop/karatsuba_mult_simpRAM_ver7.3/karatsuba_mult.sim/sim_1/behav/modelsim
+w1599308660
+8../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v
+F../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v
+Z33 L0 24
+R5
+r1
+!s85 0
+31
+Z34 !s108 1600401087.000000
+Z35 !s107 ../../../../karatsuba_mult.srcs/sources_1/new/all_parameters.vh|../../../../karatsuba_mult.srcs/sources_1/new/simpRAM_256x64_control.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sources_1/new/karatsuba_top.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v|../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/ip/ram_dual/sim/ram_dual.v|
+Z36 !s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../karatsuba_mult.srcs/sources_1/new|../../../../karatsuba_mult.srcs/sources_1/ip/ram_dual/sim/ram_dual.v|../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v|../../../../karatsuba_mult.srcs/sources_1/new/karatsuba_top.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sources_1/new/simpRAM_256x64_control.v|
+!i113 1
+R8
+Z37 !s92 -work xil_defaultlib +incdir+../../../../karatsuba_mult.srcs/sources_1/new
+R10
+vkara_mult_66bit
+!s10a 1599304779
+R31
+!i10b 1
+!s100 YOjO@RZZL8cAcNRKSP7ml2
+I?0OcDflMa>:OYzL@CCF7J2
+R1
+R32
+w1599304779
+8../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v
+F../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v
+Z38 L0 23
+R5
+r1
+!s85 0
+31
+R34
+R35
+R36
+!i113 1
+R8
+R37
+R10
+vkaratsuba_top
+!s110 1600510963
+!i10b 1
+!s100 Fa3Pl<c9ATDZUiFPbBc>d0
+I746OF7mWFKI?3HB2jnnWS3
+R1
+Z39 dC:/1desktop/kara_simpRAM_ver7.3/karatsuba_mult.sim/sim_1/behav/modelsim
+w1600510945
+8../../../../karatsuba_mult.srcs/sources_1/new/karatsuba_top.v
+F../../../../karatsuba_mult.srcs/sources_1/new/karatsuba_top.v
+R3
+Z40 L0 30
+R5
+r1
+!s85 0
+31
+!s108 1600510962.000000
+!s107 ../../../../karatsuba_mult.srcs/sources_1/new/all_parameters.vh|../../../../karatsuba_mult.srcs/sim_1/new/tb_master.v|../../../../karatsuba_mult.srcs/sources_1/new/simpRAM_256x64_control.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sources_1/new/karatsuba_top.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v|../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/ip/ram_dual/sim/ram_dual.v|
+!s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../karatsuba_mult.srcs/sources_1/new|../../../../karatsuba_mult.srcs/sources_1/ip/ram_dual/sim/ram_dual.v|../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v|../../../../karatsuba_mult.srcs/sources_1/new/karatsuba_top.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sources_1/new/simpRAM_256x64_control.v|../../../../karatsuba_mult.srcs/sim_1/new/tb_master.v|
+!i113 1
+R8
+R37
+R10
+vmaster_clk
+!s10a 1601034650
+!s110 1601034672
+!i10b 1
+!s100 hCaZOKzQkBDagV1>PHoD>1
+ICRoIC7BV@5531Z5?KbA_K0
+R1
+R2
+w1601034650
+8../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v
+F../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v
+R3
+R40
+R5
+r1
+!s85 0
+31
+!s108 1601034672.000000
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vmult_signed_18bit
+Z41 !s10a 1596609117
+Z42 !s110 1600401087
+!i10b 1
+!s100 ?5oJTh8<c8h[;?1Hk=OBE0
+IbMHaQ?JmEX]F]:>:oPFDc0
+R1
+R32
+Z43 w1596609117
+Z44 8../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v
+Z45 F../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v
+R24
+R5
+r1
+!s85 0
+31
+R34
+R35
+R36
+!i113 1
+R8
+R37
+R10
+va0vZn6L0+R3VL+3m9+2stk5G80vk2sNV0NoKzgNbAOw=
+R41
+R31
+!i10b 0
+!s100 Wz<1B6l6dP20g]_IgK@;Q0
+IUW?<MkH:OJfIg7D5IFjYB0
+R1
+!i119 1
+!i8a 198299680
+R32
+Z46 w1600401088
+R44
+R45
+Z47 L0 264
+R5
+r1
+!s85 0
+31
+R34
+R35
+R36
+!i113 1
+R8
+R37
+R10
+n2a9470
+vmult_signed_18bit_mult_gen_v12_0_14
+R41
+R42
+!i10b 1
+!s100 Xd@S;o8_zcFY^PXZOcH<`1
+I6fd4g1S=I>i>Cn0O0mclT0
+R1
+R32
+R43
+R44
+R45
+L0 74
+R5
+r1
+!s85 0
+31
+R34
+R35
+R36
+!i113 1
+R8
+R37
+R10
+vxIAB+ugLAkiTQqrHjKjS6kHh/srC4mGqBxmJ0nuWQLzUaTsBF05fXcRlwiF5Ttph
+R41
+R31
+!i10b 0
+!s100 LiZm<X4JQ_1V`6609@DTD3
+I2eb0aV>6nM?Xi8I9MMWZ92
+R1
+!i119 1
+!i8a 1215716816
+R32
+R46
+R44
+R45
+R47
+R5
+r1
+!s85 0
+31
+R34
+R35
+R36
+!i113 1
+R8
+R37
+R10
+n7138016
+vram_dual
+!s10a 1599602625
+R42
+!i10b 1
+!s100 O=54EUf<RJZW@lW4zY5j21
+Ij`b:bIJ7^N7zJ[:C=BkZ_0
+R1
+R32
+w1599602625
+8../../../../karatsuba_mult.srcs/sources_1/ip/ram_dual/sim/ram_dual.v
+F../../../../karatsuba_mult.srcs/sources_1/ip/ram_dual/sim/ram_dual.v
+R28
+R5
+r1
+!s85 0
+31
+R34
+R35
+R36
+!i113 1
+R8
+R37
+R10
+vsimpRAM_256x64_control
+!s10a 1600402173
+!s110 1600402187
+!i10b 1
+!s100 nD852c^^f9UK4;z67V[CO2
+I6dZ4]zN=WN^TR]PiAWDY63
+R1
+R39
+w1600402173
+8../../../../karatsuba_mult.srcs/sources_1/new/simpRAM_256x64_control.v
+F../../../../karatsuba_mult.srcs/sources_1/new/simpRAM_256x64_control.v
+R3
+R4
+R5
+r1
+!s85 0
+31
+!s108 1600402187.000000
+R35
+R36
+!i113 1
+R8
+R37
+R10
+nsimp@r@a@m_256x64_control
+vsingROM_256x128_control
+!s10a 1600998310
+Z48 !s110 1600998474
+!i10b 1
+!s100 >>i`i9i[W5XeLB64ASRYc3
+IVXjh?6l<l_o`:4B7GUeTT0
+R1
+R2
+w1600998310
+8../../../../karatsuba_mult.srcs/sources_1/new/singROM_256x128_control.v
+F../../../../karatsuba_mult.srcs/sources_1/new/singROM_256x128_control.v
+R4
+R5
+r1
+!s85 0
+31
+Z49 !s108 1600998474.000000
+R29
+R30
+!i113 1
+R8
+R9
+R10
+nsing@r@o@m_256x128_control
+vsrl_lut
+!s10a 1600308642
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R31
+!i10b 1
+!s100 W>L9=R1838b_KJUgddhf60
+I??nNmPnS6j3g^WnbZ8;1R2
+R1
+!s105 srl_lut_sv_unit
+S1
+R32
+w1600308642
+8../../../../karatsuba_mult.srcs/sources_1/new/srl_lut.sv
+F../../../../karatsuba_mult.srcs/sources_1/new/srl_lut.sv
+L0 34
+R5
+r1
+!s85 0
+31
+!s108 1600401088.000000
+!s107 ../../../../karatsuba_mult.srcs/sources_1/new/srl_lut.sv|
+!s90 -64|-incr|-sv|-work|xil_defaultlib|+incdir+../../../../karatsuba_mult.srcs/sources_1/new|../../../../karatsuba_mult.srcs/sources_1/new/srl_lut.sv|
+!i113 1
+o-sv -work xil_defaultlib
+!s92 -sv -work xil_defaultlib +incdir+../../../../karatsuba_mult.srcs/sources_1/new
+R10
+vtb_clk
+!s10a 1601019123
+!s110 1601019140
+!i10b 1
+!s100 EVgHW76fZSfG3]cE0Sm_D3
+I]m4OU<8Kne=n4]QO`CNn32
+R1
+R2
+w1601019123
+8../../../../karatsuba_mult.srcs/sim_1/new/tb_clk.v
+F../../../../karatsuba_mult.srcs/sim_1/new/tb_clk.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1601019140.000000
+!s107 ../../../../karatsuba_mult.srcs/sources_1/new/all_parameters.vh|../../../../karatsuba_mult.srcs/sim_1/new/tb_clk.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v|
+!s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../karatsuba_mult.srcs/sources_1/new|+incdir+../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2|../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v|../../../../karatsuba_mult.srcs/sim_1/new/tb_clk.v|
+!i113 1
+R8
+R9
+R10
+vtb_kara_128bit
+!s10a 1599314977
+!s110 1599314997
+!i10b 1
+!s100 WXXPXEDIl=zkF>7iXhgRC3
+IZ_NZcVcMC_EO9hFzI0V:K0
+R1
+Z50 dC:/1desktop/karatsuba_mult_opt/karatsuba_mult.sim/sim_1/behav/modelsim
+w1599314977
+8../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_128bit.v
+F../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_128bit.v
+R33
+R5
+r1
+!s85 0
+31
+!s108 1599314997.000000
+!s107 ../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_128bit.v|../../../../karatsuba_mult.srcs/sources_1/new/karatsuba_top.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v|../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v|../../../../karatsuba_mult.srcs/sources_1/new/karatsuba_top.v|../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_128bit.v|
+!i113 1
+R8
+R10
+vtb_kara_34bit
+!s10a 1599122894
+!s110 1599305134
+!i10b 1
+!s100 >ZTK4_^ReL35ZYdWE@Zj>2
+I75]nOZCBzKGYB7kD]LGCa2
+R1
+R50
+w1599122894
+8../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_34bit.v
+F../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_34bit.v
+R38
+R5
+r1
+!s85 0
+31
+!s108 1599305134.000000
+!s107 ../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_34bit.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v|../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v|../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_34bit.v|
+!i113 1
+R8
+R10
+vtb_kara_66bit
+!s10a 1596618930
+!s110 1599200941
+!i10b 1
+!s100 9^ZVBZdeD`3]X]C@LT9>90
+IabJFzl6hEgX28mHJNb0LA3
+R1
+R50
+w1596618930
+8../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_66bit.v
+F../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_66bit.v
+R38
+R5
+r1
+!s85 0
+31
+!s108 1599200940.000000
+!s107 ../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_66bit.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v|../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/mult_signed_18bit_sim_netlist.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v|../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v|../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_66bit.v|
+!i113 1
+R8
+R10
+vtb_master
+R12
+!i10b 1
+!s100 T?Pa6Q:Mm>FBGTe9BCfzV2
+ISCPF53`5XM`OD[;LH4RoP3
+R1
+R2
+w1600402817
+8../../../../karatsuba_mult.srcs/sim_1/new/tb_master.v
+F../../../../karatsuba_mult.srcs/sim_1/new/tb_master.v
+L0 29
+R5
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R8
+R9
+R10
+vtb_singROM_256x128_control
+R48
+!i10b 1
+!s100 U8I0HZzAgATTN95PXCk[S0
+Ibe9CUabOh1_?:M=66ICc80
+R1
+R2
+w1600998456
+8../../../../karatsuba_mult.srcs/sim_1/new/tb_singROM_256x128_control.v
+F../../../../karatsuba_mult.srcs/sim_1/new/tb_singROM_256x128_control.v
+R4
+R5
+r1
+!s85 0
+31
+R49
+R29
+R30
+!i113 1
+R8
+R9
+R10
+ntb_sing@r@o@m_256x128_control

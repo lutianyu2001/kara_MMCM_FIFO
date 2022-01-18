@@ -1,0 +1,123 @@
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_clk_simulate.do}
+# vsim -voptargs=""+acc"" -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_clk xil_defaultlib.glbl 
+# Start time: 19:53:43 on Sep 25,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading xil_defaultlib.tb_clk
+# Loading xil_defaultlib.master_clk
+# Loading xil_defaultlib.ip_clk_pll_x2
+# Loading xil_defaultlib.ip_clk_pll_x2_ip_clk_pll_x2_clk_wiz
+# Loading unisims_ver.BUFG
+# Loading unisims_ver.IBUF
+# Loading unisims_ver.PLLE2_ADV
+# Loading xil_defaultlib.fifo_256x64_control
+# Loading xil_defaultlib.ip_fifo_256x64
+# Loading xil_defaultlib.ip_fifo_256x64_fifo_generator_v13_2_3
+# Loading unisims_ver.GND
+# Loading unisims_ver.VCC
+# Loading xil_defaultlib.ip_fifo_256x64_fifo_generator_v13_2_3_synth
+# Loading xil_defaultlib.ip_fifo_256x64_fifo_generator_top
+# Loading xil_defaultlib.ip_fifo_256x64_fifo_generator_ramfifo
+# Loading xil_defaultlib.ip_fifo_256x64_clk_x_pntrs
+# Loading unisims_ver.LUT2
+# Loading unisims_ver.LUT6
+# Loading unisims_ver.LUT4
+# Loading xil_defaultlib.ip_fifo_256x64_xpm_cdc_gray
+# Loading unisims_ver.FDRE
+# Loading unisims_ver.LUT5
+# Loading unisims_ver.LUT3
+# Loading xil_defaultlib.ip_fifo_256x64_xpm_cdc_gray__2
+# Loading xil_defaultlib.ip_fifo_256x64_rd_logic
+# Loading xil_defaultlib.ip_fifo_256x64_rd_pe_as
+# Loading unisims_ver.FDCE
+# Loading unisims_ver.FDPE
+# Loading unisims_ver.CARRY4
+# Loading xil_defaultlib.ip_fifo_256x64_rd_status_flags_as
+# Loading xil_defaultlib.ip_fifo_256x64_rd_bin_cntr
+# Loading unisims_ver.LUT1
+# Loading xil_defaultlib.ip_fifo_256x64_wr_logic
+# Loading xil_defaultlib.ip_fifo_256x64_wr_pf_as
+# Loading xil_defaultlib.ip_fifo_256x64_wr_status_flags_as
+# Loading xil_defaultlib.ip_fifo_256x64_wr_bin_cntr
+# Loading xil_defaultlib.ip_fifo_256x64_memory
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_v8_4_2
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_v8_4_2_synth
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_top
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_generic_cstr
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_prim_width
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_prim_wrapper
+# Loading unisims_ver.RAMB36E1
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_prim_width__parameterized0
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_prim_wrapper__parameterized0
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_prim_width__parameterized1
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_prim_wrapper__parameterized1
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_prim_width__parameterized2
+# Loading xil_defaultlib.ip_fifo_256x64_blk_mem_gen_prim_wrapper__parameterized2
+# Loading xil_defaultlib.ip_fifo_256x64_reset_blk_ramfifo
+# Loading xil_defaultlib.ip_fifo_256x64_xpm_cdc_async_rst
+# Loading xil_defaultlib.ip_fifo_256x64_xpm_cdc_single
+# Loading xil_defaultlib.ip_fifo_256x64_xpm_cdc_single__2
+# Loading xil_defaultlib.ip_fifo_256x64_xpm_cdc_async_rst__2
+# Loading xil_defaultlib.singROM_256x128_control
+# Loading xil_defaultlib.ip_singROM_256x128
+# Loading blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2
+# Loading xil_defaultlib.glbl
+# Loading unisims_ver.RB36_INTERNAL_VLOG
+# Loading blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module
+# Loading blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage
+# Loading blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_output_reg_stage
+# ** Warning: (vsim-3015) ../../../../karatsuba_mult.srcs/sources_1/new/master_clk.v(75): [PCDPC] - Port size (1) does not match connection size (32) for port 'reset'. The port definition is at: ../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_clk/u_master_clk/u_ip_clk_pll_x2 File: ../../../../karatsuba_mult.srcs/sources_1/ip/ip_clk_pll_x2/ip_clk_pll_x2_sim_netlist.v
+# Loading unisims_ver.x_lut2_mux4
+# Loading unisims_ver.x_lut3_mux8
+# Loading unisims_ver.x_lut1_mux2
+# 1
+# 1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: suroot  Hostname: MMK-PC-X360  ProcessID: 147288
+#           Attempting to use alternate WLF file "./wlftw3kr8w".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftw3kr8w
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module tb_clk.u_master_clk.u_singROM_256x128_control.u_ip_singROM_256x128.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/DLY_ADDRB_TRIGGER
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/KARA_TIME_COST
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/clk_50
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/clk_100
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/rst_50
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/rst_100
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/in_fifo
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/fifo_prog_full
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/fifo_empty_org
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/dly_cnt
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/fifo_full_org
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/fifo_full_dly_tmp
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/fifo_full_rd
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/fifo_empty_dly_tmp
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/fifo_empty_wr
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/in_fifo_en
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/wr_state
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/fifo_out
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/fifo_out_en
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/rd_state
+add wave -position end  sim:/tb_clk/u_master_clk/u_fifo_256x64_control/fifo_prog# End time: 20:24:41 on Sep 25,2020, Elapsed time: 0:55:12
+# Errors: 0, Warnings: 2
+om_en
+# End time: 20:24:55 on Sep 25,2020, Elapsed time: 0:31:12
+# Errors: 0, Warnings: 4

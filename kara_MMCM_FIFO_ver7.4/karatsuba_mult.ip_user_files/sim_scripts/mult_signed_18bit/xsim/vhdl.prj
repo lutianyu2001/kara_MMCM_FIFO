@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../karatsuba_mult.srcs/sources_1/ip/mult_signed_18bit/sim/mult_signed_18bit.vhd" \
+
+nosort

@@ -1,0 +1,18 @@
+delete wave *
+add wave                 -position 0   sim:/tb_master/u_master_clk/clk
+add wave                 -position 1   sim:/tb_master/u_master_clk/rst
+add wave                 -position 2   sim:/tb_master/u_master_clk/tb_2_master_en
+add wave                 -position 3   sim:/tb_master/u_master_clk/tb_2_master
+add wave                 -position 4   sim:/tb_master/u_master_clk/master_2_ram_en
+add wave                 -position 5   sim:/tb_master/u_master_clk/master_2_ram
+add wave                 -position 6   sim:/tb_master/u_master_clk/u_simpRAM_256x64_control/in_ram_en
+add wave                 -position 7   sim:/tb_master/u_master_clk/u_simpRAM_256x64_control/in_ram
+add wave -radix unsigned -position 8   sim:/tb_master/u_master_clk/u_simpRAM_256x64_control/ram_addra
+add wave -radix unsigned -position 9   sim:/tb_master/u_master_clk/u_simpRAM_256x64_control/ram_addrb
+add wave                 -position 10  sim:/tb_master/u_master_clk/u_simpRAM_256x64_control/ram_out
+add wave                 -position 11  sim:/tb_master/u_master_clk/u_karatsuba_top/mult_in_en
+add wave                 -position 12  sim:/tb_master/u_master_clk/u_karatsuba_top/mult_in_a
+add wave                 -position 13  sim:/tb_master/u_master_clk/u_karatsuba_top/mult_out_en
+add wave                 -position 14  sim:/tb_master/u_master_clk/u_karatsuba_top/mult_out
+add wave                 -position 15  sim:/tb_master/master_out_en
+add wave                 -position 16  sim:/tb_master/master_out

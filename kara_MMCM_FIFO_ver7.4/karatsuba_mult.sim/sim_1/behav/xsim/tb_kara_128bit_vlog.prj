@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_34bit.v" \
+"../../../../karatsuba_mult.srcs/sources_1/new/kara_mult_66bit.v" \
+"../../../../karatsuba_mult.srcs/sources_1/new/karatsuba_top.v" \
+"../../../../karatsuba_mult.srcs/sim_1/new/tb_kara_128bit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
